@@ -9,11 +9,15 @@ import { PedidosComponent } from './components/pedidos/pedidos.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { FormPlatosComponent } from './components/form-platos/form-platos.component';
 import { PedidoDetalleComponent } from './components/pedido-detalle/pedido-detalle.component';
+import { HomeComponent } from './components/home/home.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 const rutas: Routes = [
+  { path: 'Home', component: HomeComponent },
   { path: 'VerMenu', component: FormPlatosComponent },
   { path: 'Pedidos', component: PedidosComponent },
-  { path: 'Pedir', component: PedidoDetalleComponent }
+  { path: 'Pedir', component: PedidoDetalleComponent },
+  { path: 'Calificar', component: FormularioComponent }
   ];
 
 @NgModule({
@@ -22,7 +26,9 @@ const rutas: Routes = [
     PedidosComponent,
     MenuComponent,
     FormPlatosComponent,
-    PedidoDetalleComponent
+    PedidoDetalleComponent,
+    HomeComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

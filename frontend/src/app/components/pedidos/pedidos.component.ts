@@ -29,6 +29,8 @@ export class PedidosComponent implements OnInit{
       error => {
         console.error('Error al eliminar Pedido:', error);
       });
-      this.route.navigate(['/'], { queryParams: { reload: true } })
+      this.route.navigate(['/Pedidos']);
+      window.location.reload();
+      window.location.href = '/Pedidos';
   }
 }

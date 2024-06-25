@@ -12,13 +12,13 @@ import { PedidoService } from '../../services/pedido.service';
 })
 export class PedidoDetalleComponent implements OnInit{
 
-  platoSeleccionado: Plato = new Plato('', '', 0);
+  platoSeleccionado: Plato = new Plato('', '', 0, 0);
   cantidad: number = 1;
   especificaciones: string = '';
 
   arrayPedidos:Pedido[]=[];
 
-  constructor(private sharedDataService: SharedDataService, private router: Router, private pedidoService:PedidoService){
+  constructor(private sharedDataService: SharedDataService, private router: Router, private pedidoService:PedidoService,private route: Router){
     this.CargarPedidos();
   }
 
@@ -46,8 +46,21 @@ export class PedidoDetalleComponent implements OnInit{
       });
   }
 
+  CalcularCostoTotal(){
+    let total=this.cantidad*this.platoSeleccionado.costo;
+    return total;
+  }
+
+  CalcularCantT(){
+    let cantTotal=this.platoSeleccionado.cant*this.cantidad;
+    return cantTotal;
+  }
+
   Pagar() {
-    let nuevoPedido = new Pedido(this.arrayPedidos.length+1,this.platoSeleccionado.nombre,this.cantidad,this.platoSeleccionado.desc,this.especificaciones);
+    let nuevoPedido = new Pedido(this.arrayPedidos.length+1,this.platoSeleccionado.nombre
+      ,this.CalcularCantT(),this.platoSeleccionado.desc,this.especificaciones,this.CalcularCostoTotal());
     this.GuardarPedido(nuevoPedido);
+    alert("Pedido Agregado");
+    this.route.navigate(['/VerMenu'], { queryParams: { reload: true } });
   }
 }

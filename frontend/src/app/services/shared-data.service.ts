@@ -5,7 +5,7 @@ import { Plato } from '../models/plato';
   providedIn: 'root'
 })
 export class SharedDataService {
-  private plato: Plato = new Plato('', '', 0);
+  private plato: Plato = new Plato('', '', 0, 0);
 
   setPlato(plato: Plato) {
     this.plato = plato;

@@ -10,10 +10,11 @@
                     </div>
                     <div class="card-content">
                     <span class="card-title">{{plato.Nombre}}</span>
+                    <span>{{plato.Cantidad}} Piezas</span>
                     <p>{{plato.Descripcion}}.</p>
                     <p>Costo: {{plato.Costo}}.</p>
                     </div>
-                    <button (click)="Pedir(plato.Nombre,plato.Descripcion,plato.Costo)" class="btn btn-info">Pedir {{plato.Nombre}}</button>
+                    <button (click)="Pedir(plato.Nombre,plato.Descripcion,plato.Costo,plato.Cantidad)" class="btn btn-info">Pedir {{plato.Nombre}}</button>
                 </div>
                 </div>
             </div>

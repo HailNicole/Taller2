@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": 3,
+    "nombre_plato": "Maki tempura",
+    "cantidad": 6,
+    "descripcion": "Nuestros tempurizados siempre han sido un éxito, ahora te traemos la versión maki para que puedas disfrutar también de nuestro sushi tempurizado.Crema de queso, cebollino y salmón spicy, una explosión de sabores.",
+    "esp": "",
+    "costoTotal": 7
+  },
+  {
+    "id": 4,
+    "nombre_plato": "Mix roll",
+    "cantidad": 8,
+    "descripcion": "Explosión de sabores y frescura máxima con este roll que combina el mejor atún con aguacate, mango, cobertura de salmon tataki y salsa unagi.¡Un BOOM en toda regla!",
+    "esp": "",
+    "costoTotal": 10.25
+  }
+]
