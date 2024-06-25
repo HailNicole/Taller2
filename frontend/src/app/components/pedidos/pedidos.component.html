@@ -1,0 +1,26 @@
+<div class="container">
+    PEDIDOS
+    <div>
+        <table class="responsive-table">
+            <thead>
+              <tr>
+                  <th scope="col">Número de Pedido</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Especificaciones</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pedido of arrayDatos">
+                    <th scope="row">{{pedido.id}}</th>
+                    <td>{{pedido.nombre_plato}}</td>
+                    <td>{{pedido.cantidad}}</td>
+                    <td>{{pedido.descripcion}}</td>
+                    <td>{{pedido.esp}}</td>
+                    <button (click)="Eliminar(pedido.id)" class="btn btn-info">Eliminar Pedido</button>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
