@@ -6,7 +6,7 @@
               <tr>
                   <th scope="col">Número de Pedido</th>
                   <th scope="col">Nombre</th>
-                  <th scope="col">Cantidad</th>
+                  <th scope="col">Número de Piezas</th>
                   <th scope="col">Descripcion</th>
                   <th scope="col">Especificaciones</th>
                   <th scope="col">Total a Pagar</th>
@@ -16,11 +16,11 @@
                 <tr *ngFor="let pedido of arrayDatos">
                     <th scope="row">{{pedido.id}}</th>
                     <td>{{pedido.nombre_plato}}</td>
-                    <td>{{pedido.cantidad}}</td>
+                    <td>{{pedido.cantidad}} Piezas</td>
                     <td>{{pedido.descripcion}}</td>
                     <td>{{pedido.esp}}</td>
                     <td>${{pedido.costoTotal}}</td>
-                    <button (click)="Eliminar(pedido.id)" class="btn btn-info">Eliminar Pedido</button>
+                    <td><button (click)="Eliminar(pedido.id)" class="btn btn-info">Eliminar Pedido</button></td>
                 </tr>
             </tbody>
           </table>

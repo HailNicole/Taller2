@@ -1,4 +1,6 @@
 import { Component, OnInit, AfterViewInit} from '@angular/core';
+import { Router} from '@angular/router';
+
 declare var M: any;
 @Component({
   selector: 'app-home',
@@ -6,15 +8,9 @@ declare var M: any;
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     M.AutoInit();
-  }
-
-  initializeParallax(): void {
-    // Inicializa todos los elementos con clase 'parallax'
-    const elems = document.querySelectorAll('.parallax');
-    M.Parallax.init(elems);
   }
 }

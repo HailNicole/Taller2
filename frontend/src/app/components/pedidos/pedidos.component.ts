@@ -12,7 +12,7 @@ export class PedidosComponent implements OnInit{
 
   arrayDatos:Pedido[]=[];
 
-  constructor(private pedidoService:PedidoService,private route: Router){
+  constructor(private pedidoService:PedidoService,private router: Router){
     this.pedidoService.obtenerDatos().subscribe(data =>{
       this.arrayDatos = data;
     });
@@ -29,8 +29,9 @@ export class PedidosComponent implements OnInit{
       error => {
         console.error('Error al eliminar Pedido:', error);
       });
-      this.route.navigate(['/Pedidos']);
-      window.location.reload();
-      window.location.href = '/Pedidos';
+        // Navega a la misma ruta para recargar la página
+        this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+          this.router.navigate(['/Pedidos']);
+        });
   }
 }

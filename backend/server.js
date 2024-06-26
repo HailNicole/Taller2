@@ -15,7 +15,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({origin: 'http://localhost:4200'}));
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors);
 
 
 // Función para leer datos de un archivo JSON específico

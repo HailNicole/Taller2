@@ -17,7 +17,9 @@ const rutas: Routes = [
   { path: 'VerMenu', component: FormPlatosComponent },
   { path: 'Pedidos', component: PedidosComponent },
   { path: 'Pedir', component: PedidoDetalleComponent },
-  { path: 'Calificar', component: FormularioComponent }
+  { path: 'Calificar', component: FormularioComponent },
+  { path: '', redirectTo: '/Home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/Home' }
   ];
 
 @NgModule({
