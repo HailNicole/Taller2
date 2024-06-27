@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "nombre": "Maki tempura",
+      "desc": "Nuestros tempurizados siempre han sido un éxito, ahora te traemos la versión maki para que puedas disfrutar también de nuestro sushi tempurizado.Crema de queso, cebollino y salmón spicy, una explosión de sabores.",
+      "costo": 7.0,
+      "cant": 6,
+      "img": "../assets/sushi1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Mix roll",
+      "desc": "Explosión de sabores y frescura máxima con este roll que combina el mejor atún con aguacate, mango, cobertura de salmon tataki y salsa unagi. ¡Un BOOM en toda regla!",
+      "costo": 10.25,
+      "cant": 8,
+      "img": "../assets/sushi2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Lee Roll",
+      "desc": "No encontrarás este roll en ningún otro sitio, combinación espectacular de anguila y mango combinado con nuestra mayo teriyaki, sencillamente brutal.¿A que esperas para probarlo?",
+      "costo": 11.0,
+      "cant": 8,
+      "img": "../assets/sushi3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Revolution Roll",
+      "desc": "Heüra y aguacate, con sombrero de cebolla caramelizada y envoltura de alga wakame. Un plato elegido por vosotros y Heüra que acerca la libertad de elegir a vuestras mesas.",
+      "costo": 9.50,
+      "cant": 8,
+      "img": "../assets/sushi4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Roll tropical",
+      "desc": "Refrescante como el solo, combinamos nuestro mejor atún con mango, aguacate y piña flambeada, esto no lo vas a encontrar en otra parte no hay descripción posible.¡E-S-P-E-C-T-A-C-U-L-A-R!",
+      "costo": 6.50,
+      "cant": 8,
+      "img": "../assets/sushi5.jpg"
+      }
+  ]

@@ -11,12 +11,14 @@ import { FormPlatosComponent } from './components/form-platos/form-platos.compon
 import { PedidoDetalleComponent } from './components/pedido-detalle/pedido-detalle.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { EditarPedidoComponent } from './components/editar-pedido/editar-pedido.component';
 
 const rutas: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'VerMenu', component: FormPlatosComponent },
   { path: 'Pedidos', component: PedidosComponent },
   { path: 'Pedir', component: PedidoDetalleComponent },
+  { path: 'EditarPedido', component: EditarPedidoComponent },
   { path: 'Calificar', component: FormularioComponent },
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
   { path: '**', redirectTo: '/Home' }
@@ -30,7 +32,8 @@ const rutas: Routes = [
     FormPlatosComponent,
     PedidoDetalleComponent,
     HomeComponent,
-    FormularioComponent
+    FormularioComponent,
+    EditarPedidoComponent
   ],
   imports: [
     BrowserModule,
