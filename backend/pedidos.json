@@ -25,5 +25,14 @@
     "esp": "",
     "costoTotal": 28.5,
     "id_plato": 4
+  },
+  {
+    "id": 4,
+    "nombre_plato": "Mix roll",
+    "cantidad": 8,
+    "descripcion": "Explosión de sabores y frescura máxima con este roll que combina el mejor atún con aguacate, mango, cobertura de salmon tataki y salsa unagi. ¡Un BOOM en toda regla!",
+    "esp": "",
+    "costoTotal": 10.25,
+    "id_plato": 2
   }
 ]
