@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FormularioService {
 
-  private baseUrl = 'http://localhost:3000/api/registros';
+  private baseUrl = 'http://localhost:3000/api/comentarios';
 
   constructor(private http: HttpClient) { 
     console.log('El servicio Http esta funcionando…');
