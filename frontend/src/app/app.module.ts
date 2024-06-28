@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { Routes, RouterModule, RouterLinkActive } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PedidosComponent } from './components/pedidos/pedidos.component';
@@ -12,6 +12,7 @@ import { PedidoDetalleComponent } from './components/pedido-detalle/pedido-detal
 import { HomeComponent } from './components/home/home.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { EditarPedidoComponent } from './components/editar-pedido/editar-pedido.component';
+
 
 const rutas: Routes = [
   { path: 'Home', component: HomeComponent },
@@ -39,8 +40,9 @@ const rutas: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(rutas),
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     provideClientHydration()
