@@ -55,8 +55,8 @@ export class EditarPedidoComponent implements OnInit{
   }
 
   EditarPedido(){
-    let nuevoPedido = new Pedido(this.platoSeleccionado.id,this.platoSeleccionado.nombre
-      ,this.CalcularCantT(),this.platoSeleccionado.desc,this.especificaciones,this.CalcularCostoTotal(),this.platoSeleccionado.id);
+    let nuevoPedido = new Pedido(this.pedidoSeleccionado.id,this.pedidoSeleccionado.nombre_plato
+      ,this.CalcularCantT(),this.pedidoSeleccionado.descripcion,this.especificaciones,this.CalcularCostoTotal(),this.pedidoSeleccionado.id_plato);
     this.pedidoService.editarDato(nuevoPedido).subscribe(
       response => {
         console.log('Pedido editado correctamente:', response);

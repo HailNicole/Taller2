@@ -1,38 +1,29 @@
 [
   {
     "id": 1,
-    "nombre_plato": "Maki tempura",
-    "cantidad": 12,
-    "descripcion": "Nuestros tempurizados siempre han sido un éxito, ahora te traemos la versión maki para que puedas disfrutar también de nuestro sushi tempurizado.Crema de queso, cebollino y salmón spicy, una explosión de sabores.",
-    "esp": "Sin queso",
-    "costoTotal": 14,
-    "id_plato": 1
+    "nombre_plato": "Mix roll",
+    "cantidad": 8,
+    "descripcion": "Explosión de sabores y frescura máxima con este roll que combina el mejor atún con aguacate, mango, cobertura de salmon tataki y salsa unagi. ¡Un BOOM en toda regla!",
+    "esp": "Sin nada",
+    "costoTotal": 10.25,
+    "id_plato": 2
   },
   {
     "id": 2,
     "nombre_plato": "Mix roll",
-    "cantidad": 16,
+    "cantidad": 8,
     "descripcion": "Explosión de sabores y frescura máxima con este roll que combina el mejor atún con aguacate, mango, cobertura de salmon tataki y salsa unagi. ¡Un BOOM en toda regla!",
     "esp": "Sin aguacate",
-    "costoTotal": 20.5,
+    "costoTotal": 10.25,
     "id_plato": 2
   },
   {
     "id": 3,
-    "nombre_plato": "Revolution Roll",
-    "cantidad": 24,
-    "descripcion": "Heüra y aguacate, con sombrero de cebolla caramelizada y envoltura de alga wakame. Un plato elegido por vosotros y Heüra que acerca la libertad de elegir a vuestras mesas.",
+    "nombre_plato": "Maki tempura",
+    "cantidad": 6,
+    "descripcion": "Nuestros tempurizados siempre han sido un éxito, ahora te traemos la versión maki para que puedas disfrutar también de nuestro sushi tempurizado.Crema de queso, cebollino y salmón spicy, una explosión de sabores.",
     "esp": "",
-    "costoTotal": 28.5,
-    "id_plato": 4
-  },
-  {
-    "id": 4,
-    "nombre_plato": "Mix roll",
-    "cantidad": 8,
-    "descripcion": "Explosión de sabores y frescura máxima con este roll que combina el mejor atún con aguacate, mango, cobertura de salmon tataki y salsa unagi. ¡Un BOOM en toda regla!",
-    "esp": "",
-    "costoTotal": 10.25,
-    "id_plato": 2
+    "costoTotal": 7,
+    "id_plato": 1
   }
 ]
